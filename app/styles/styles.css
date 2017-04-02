@@ -1,0 +1,41 @@
+.parent-container > .heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.parent-container > .send-message-from-parent > h5{
+    text-align: right;
+}
+
+.parent-container > .message-received-from-children{
+    margin-top: 20px;
+}
+
+.parent-container > .message-received-from-children > .child-a-msg {
+    text-align: right;
+}
+
+.parent-container > .child-containers {
+    margin-top: 50px;
+}
+
+.child-b-container > .heading, .child-a-container > .heading {
+    text-align: center;
+}
+
+.child-b-container > .message-received-from-parent, .child-a-container > .message-received-from-parent {
+    text-align: center;
+}
+
+.child-b-container .child-reply-btn, .child-a-container .child-reply-btn {
+    margin-top: 20px;
+}
+
+.child-b-container .child-reply-btn .child-b-input, .child-a-container .child-reply-btn .child-a-input {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.child-b-container .child-reply-btn .reply, .child-a-container .child-reply-btn .reply {
+    margin-top: 20px;
+}

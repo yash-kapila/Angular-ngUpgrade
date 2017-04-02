@@ -1,0 +1,28 @@
+<div class="parent-container">
+    <h1 class="heading"> Parent Component </h1>
+
+    <div class="send-message-from-parent row">
+        <h5 class="col-xs-6"> Send out message for dinner </h5>
+        <button class="btn btn-primary col-xs-2" ng-click="$ctrl.dinnerIsReady()">
+            Dinner Is Ready!!
+        </button>
+    </div>
+    
+    <div class="message-received-from-children row">
+        <div ng-if="$ctrl.messageFromChildA" class="col-xs-6 child-a-msg">
+            <b>Child A says:</b> {{$ctrl.messageFromChildA}}
+        </div>
+        <div ng-if="$ctrl.messageFromChildB" class="col-xs-6">
+            <b>Child B says:</b> {{$ctrl.messageFromChildB}}
+        </div>
+    </div>
+
+    <div class="child-containers row">
+        <div class="col-xs-6">
+            <child-a reply-to-parent="$ctrl.messageFromChildAReceived(msg)"></child-a>
+        </div>
+        <div class="col-xs-6">
+            <child-b reply-to-parent="$ctrl.messageFromChildBReceived(msg)"></child-b>
+        </div>
+    </div>
+</div>
