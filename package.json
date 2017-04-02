@@ -24,6 +24,7 @@
     "@angular/upgrade": "^4.0.1",
     "angular": "^1.6.4",
     "bootstrap": "^3.3.7",
+    "systemjs": "^0.19.31",
     "typescript": "^2.2.2"
   }
 }
