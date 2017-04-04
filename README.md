@@ -9,9 +9,9 @@ The path to migrate this application from AngularJS to Angular consisted of two 
 2. Migrate the TypeScript AngularJS app to Angular, one component at a time.
 
 There are three branches in this repository:
-**AngularJS** - This repository contains the initial application code which was created using AngularJS 1.6 in ES5 syntax.
-**AngularJS-TypeScript** - This repository contains the migrated AngularJS application in TypeScript.
-**Angular** - This repository contains the hybrid application code where both Angular and AngularJS components exist together.
+1. **AngularJS** - This repository contains the initial application code which was created using AngularJS 1.6 in ES5 syntax.
+2. **AngularJS-TypeScript** - This repository contains the migrated AngularJS application in TypeScript.
+3. **Angular** - This repository contains the hybrid application code where both Angular and AngularJS components exist together.
 
 In this application, **Parent** component exists as an AngularJS component, **Child A** and **Child B** are new Angular components and **AppService** is a new Angular service.
 
