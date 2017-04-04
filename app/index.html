@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
 
 <head>
     <meta charset="utf-8" />
-    <title>AngularJS Plunker</title>
-    <script src="vendor/angular.min.js"></script>
+    <title>Ng-Upgrade</title>
 
-    <script src="app.js"></script>
-    <script src="services/app.service.js"></script>
-    <script src="components/parent/parent.component.js"></script>
-    <script src="components/child-a/child-a.component.js"></script>
-    <script src="components/child-b/child-b.component.js"></script>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reflect-metadata/0.1.10/Reflect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.8.5/zone.js"></script>
+    <script src="vendor/system.js"></script>
+
+    <script src="config.js"></script>
+    <script>
+        System.import('app.ts')
+            .then(console.log("app compiled successfully"))
+            .catch(console.error.bind(console));
+    </script>
 
     <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="stylesheet" href="vendor/bootstrap.min.css"/>

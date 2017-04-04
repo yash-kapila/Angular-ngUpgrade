@@ -19,10 +19,10 @@
 
     <div class="child-containers row">
         <div class="col-xs-6">
-            <child-a reply-to-parent="$ctrl.messageFromChildAReceived(msg)"></child-a>
+            <child-a (reply-to-parent)="$ctrl.messageFromChildAReceived($event)"></child-a>
         </div>
         <div class="col-xs-6">
-            <child-b reply-to-parent="$ctrl.messageFromChildBReceived(msg)"></child-b>
+            <child-b (reply-to-parent)="$ctrl.messageFromChildBReceived($event)"></child-b>
         </div>
     </div>
 </div>
