@@ -5,7 +5,12 @@
     <meta charset="utf-8" />
     <title>Ng-Upgrade</title>
 
+    <!-- Polyfill(s) for older browsers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reflect-metadata/0.1.10/Reflect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.8.5/zone.js"></script>
     <script src="vendor/system.js"></script>
+
     <script src="config.js"></script>
     <script>
         System.import('app.ts')

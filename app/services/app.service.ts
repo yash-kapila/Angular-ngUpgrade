@@ -1,15 +1,16 @@
-import angular from 'angular';
+import { Injectable } from '@angular/core';
 
+@Injectable()
 export class AppService {
     message: Function[];
 
-    constructor() {
+    constructor () {
         this.message = [];
-    };
+    }
 
     publishMessageForChildren(msg: string) {
         if (this.message.length) {
-            angular.forEach(this.message, (callbackElement) => {
+            this.message.forEach(callbackElement => {
                 callbackElement(msg);
             });
         } else {
@@ -20,4 +21,5 @@ export class AppService {
     subscribeToMessageFromParent(callback: Function) {
         this.message.push(callback);
     };
+
 };

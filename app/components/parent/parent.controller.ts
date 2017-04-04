@@ -16,11 +16,11 @@ export class ParentCtrl {
         this._appService.publishMessageForChildren('Dinner is ready.');
     };
 
-    messageFromChildAReceived(msg) {
+    messageFromChildAReceived(msg: string) {
         this.messageFromChildA = msg
     };
 
-    messageFromChildBReceived(msg) {
+    messageFromChildBReceived(msg: string) {
         this.messageFromChildB = msg;
     };
 };

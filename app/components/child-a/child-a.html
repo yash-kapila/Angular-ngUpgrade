@@ -2,16 +2,16 @@
     <h3 class="heading"> Child A Component </h3>
 
     <div class="message-received-from-parent row">
-        <div ng-show="$ctrl.message" class="col-xs-12">
-            <b>Parent says:</b> {{$ctrl.message}}
+        <div *ngIf="message" class="col-xs-12">
+            <b>Parent says:</b> {{message}}
         </div>
-        <div ng-show="$ctrl.message" class="col-xs-12 child-reply-btn">
+        <div *ngIf="message" class="col-xs-12 child-reply-btn">
             <div class="msg-container">
                 <label> Send message back </label>
-                <input type="text" ng-model="$ctrl.childAMessage" class="form-control child-a-input">
+                <input type="text" [(ngModel)]="childAMessage" class="form-control child-a-input">
             </div>
             <div class="btn-container">
-                <button class="btn btn-success reply" ng-click="$ctrl.reply()">
+                <button class="btn btn-success reply" (click)="reply()">
                     Reply
                 </button>
             </div>
